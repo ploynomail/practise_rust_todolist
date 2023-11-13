@@ -16,7 +16,7 @@ pub enum Commands {
         #[clap(help = "The item content to add.", required = true)]
         content: Option<String>,
     },
-
+    #[clap(about = "Get a todo item with key.")]
     Get {
         #[clap(help = "The item id to get.")]
         id: Option<i32>,
